@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainMenu"
+        android:icon="@drawable/baseline_menu_24"
+        android:title="Homescreen" />
+    <item
+        android:id="@+id/airMonitor"
+        android:icon="@drawable/air"
+        android:title="Air monitor" />
+    <item
+        android:id="@+id/soilMonitor"
+        android:icon="@drawable/soil_moisture_field_svgrepo_com"
+        android:title="Soil monitor" />
+    <item
+        android:id="@+id/terminal"
+        android:icon="@drawable/baseline_terminal_24"
+        android:title="Terminal" />
+</menu>
