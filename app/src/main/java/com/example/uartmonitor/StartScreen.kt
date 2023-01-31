@@ -23,7 +23,7 @@ class StartScreen : Fragment() {
         val view = inflater.inflate(R.layout.fragment_start_screen, container, false)
 
         Timer().schedule(2000){
-            val fragment = MainMenu()
+            val fragment = Home()
             val fragmentTransaction : FragmentTransaction? = activity?.supportFragmentManager?.beginTransaction()
             fragmentTransaction?.replace(R.id.fragmentContainerView, fragment)
             fragmentTransaction?.commit()

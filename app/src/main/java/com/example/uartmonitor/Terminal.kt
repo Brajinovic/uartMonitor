@@ -2,7 +2,6 @@ package com.example.uartmonitor
 
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class serialMonitor : Fragment() {
+class Terminal : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,7 +20,7 @@ class serialMonitor : Fragment() {
     ): View? {
         val navigation = activity?.findViewById<BottomNavigationView>(R.id.topNavigation)
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_serial_monitor, container, false)
+        val view = inflater.inflate(R.layout.fragment_terminal, container, false)
         val text = arguments?.getString("buttonPressed").toString()
 
         val recycleView = view.findViewById<RecyclerView>(R.id.recycler_item_layout)
@@ -39,7 +38,7 @@ class serialMonitor : Fragment() {
         val adapter = lineAdapter(data)
         navigation?.setOnItemSelectedListener{
             when(it.itemId){
-                R.id.mainMenu -> switchFragment(MainMenu())
+                R.id.mainMenu -> switchFragment(Home())
                 R.id.airMonitor -> switchFragment(AirMonitor())
                 R.id.soilMonitor -> switchFragment(SoilMonitor())
             }

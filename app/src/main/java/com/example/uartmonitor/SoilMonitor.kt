@@ -21,16 +21,16 @@ class SoilMonitor : Fragment() {
         val view = inflater.inflate(R.layout.fragment_soil_monitor, container, false)
 
         view.findViewById<Button>(R.id.backSoilButton).setOnClickListener {
-            val fragment = MainMenu()
+            val fragment = Home()
             val fragmentTransaction : FragmentTransaction? = activity?.supportFragmentManager?.beginTransaction()
             fragmentTransaction?.replace(R.id.fragmentContainerView, fragment)
             fragmentTransaction?.commit()
         }
         navigation?.setOnItemSelectedListener{
             when(it.itemId){
-                R.id.mainMenu -> switchFragment(MainMenu())
+                R.id.mainMenu -> switchFragment(Home())
                 R.id.airMonitor -> switchFragment(AirMonitor())
-                R.id.terminal -> switchFragment(serialMonitor())
+                R.id.terminal -> switchFragment(Terminal())
             }
             true
         }
