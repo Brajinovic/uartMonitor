@@ -57,57 +57,70 @@ class Home : Fragment() {
         upPump?.setOnClickListener{
             model!!.SetPump(model!!.GetPump() + 1)
             view.findViewById<TextView>(R.id.pumpValue).text = model!!.GetPump().toString()
+            model!!.AddConsoleLog("Set: pump    ${model!!.GetPump()}")
         }
         downPump?.setOnClickListener{
             model!!.SetPump(model!!.GetPump() - 1)
             view.findViewById<TextView>(R.id.pumpValue).text = model!!.GetPump().toString()
+            model!!.AddConsoleLog("Set: pump    ${model!!.GetPump()}")
         }
         upPump?.setOnLongClickListener{
             model!!.SetPump(model!!.GetPump() + 10)
             view.findViewById<TextView>(R.id.pumpValue).text = model!!.GetPump().toString()
+            model!!.AddConsoleLog("Set: pump    ${model!!.GetPump()}")
             true
         }
         downPump?.setOnLongClickListener{
             model!!.SetPump(model!!.GetPump() - 10)
             view.findViewById<TextView>(R.id.pumpValue).text = model!!.GetPump().toString()
+            model!!.AddConsoleLog("Set: pump    ${model!!.GetPump()}")
             true
         }
 
         upFan?.setOnClickListener{
             model!!.SetFan(model!!.GetFan() + 1)
             view.findViewById<TextView>(R.id.fanValue).text = model!!.GetFan().toString()
+            model!!.AddConsoleLog("Set: fan        ${model!!.GetFan()}")
         }
         downFan?.setOnClickListener{
             model!!.SetFan(model!!.GetFan() - 1)
             view.findViewById<TextView>(R.id.fanValue).text = model!!.GetFan().toString()
+            model!!.AddConsoleLog("Set: fan        ${model!!.GetFan()}")
+            Log.d("data", model!!.GetConsoleLog()[0])
         }
         upFan?.setOnLongClickListener{
             model!!.SetFan(model!!.GetFan() + 10)
             view.findViewById<TextView>(R.id.fanValue).text = model!!.GetFan().toString()
+            model!!.AddConsoleLog("Set: fan        ${model!!.GetFan()}")
             true
         }
         downFan?.setOnLongClickListener{
             model!!.SetFan(model!!.GetFan() - 10)
             view.findViewById<TextView>(R.id.fanValue).text = model!!.GetFan().toString()
+            model!!.AddConsoleLog("Set: fan        ${model!!.GetFan()}")
             true
         }
 
         upHeater?.setOnClickListener{
             model!!.SetHeater(model!!.GetHeater() + 1)
             view.findViewById<TextView>(R.id.heaterValue).text = model!!.GetHeater().toString()
+            model!!.AddConsoleLog("Set: heater  ${model!!.GetHeater()}")
         }
         downHeater?.setOnClickListener{
             model!!.SetHeater(model!!.GetHeater() - 1)
             view.findViewById<TextView>(R.id.heaterValue).text = model!!.GetHeater().toString()
+            model!!.AddConsoleLog("Set: heater  ${model!!.GetHeater()}")
         }
         upHeater?.setOnLongClickListener{
             model!!.SetHeater(model!!.GetHeater() + 10)
             view.findViewById<TextView>(R.id.heaterValue).text = model!!.GetHeater().toString()
+            model!!.AddConsoleLog("Set: heater  ${model!!.GetHeater()}")
             true
         }
         downHeater?.setOnLongClickListener{
             model!!.SetHeater(model!!.GetHeater() - 10)
             view.findViewById<TextView>(R.id.heaterValue).text = model!!.GetHeater().toString()
+            model!!.AddConsoleLog("Set: heater  ${model!!.GetHeater()}")
             true
         }
 

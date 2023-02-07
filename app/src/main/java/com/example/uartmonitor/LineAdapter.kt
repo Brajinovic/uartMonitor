@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class lineAdapter(val items: List<textLine>) :
+class LineAdapter(val items: ArrayList<String>) :
         RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         //set the views to display the items
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
@@ -36,12 +36,10 @@ class lineAdapter(val items: List<textLine>) :
                 itemView.findViewById(R.id.RecyclerTextView)
 
 
-            fun bind(line: textLine) {
+            fun bind(text: String) {
                 Glide
                     .with(itemView.context)
-                    //.load(product.image_link)
-                    //.into(productImage)
-                singleLine.text = line.line
+                singleLine.text = text
             }
 
         }

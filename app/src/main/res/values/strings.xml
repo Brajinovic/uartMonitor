@@ -19,9 +19,9 @@
     <string name="currentGraphTxt">Air temperature graph</string>
     <string name="last24Hrs">Last 24 hours</string>
     <string name="backButton">Back</string>
-    <string name="temperature">Temperature: </string>
+    <string name="temperature">Heater: </string>
     <string name="celcius">°C</string>
-    <string name="humidity">Humidity: </string>
+    <string name="humidity">Fan: </string>
     <string name="percent">%</string>
-    <string name="moisture">Moisture: </string>
+    <string name="moisture">Pump: </string>
 </resources>

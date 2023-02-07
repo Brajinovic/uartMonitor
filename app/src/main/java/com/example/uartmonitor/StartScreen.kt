@@ -60,8 +60,8 @@ class StartScreen : Fragment() {
                         model!!.AddTemperature(i.field1.toDouble(), data.feeds.indexOf(i))
                         model!!.AddHumidity(i.field2.toDouble(), data.feeds.indexOf(i))
                         model!!.AddMoisture("%.1f".format(i.field4.toDouble()).toDouble(), data.feeds.indexOf(i))
-                        model!!.SetHeater(24)
-                        model!!.SetFan(75)
+                        model!!.SetHeater(25)
+                        model!!.SetFan(25)
                         model!!.SetPump(25)
                     }
                 }

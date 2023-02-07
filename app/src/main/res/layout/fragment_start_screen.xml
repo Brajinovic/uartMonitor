@@ -7,30 +7,15 @@
     tools:context=".StartScreen">
 
 
-
-        <ImageView
-            android:id="@+id/feritImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="232dp"
-            android:src="@drawable/ic_launcher_background"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
-
         <TextView
             android:id="@+id/poweredTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="337dp"
             android:layout_marginBottom="16dp"
             android:text="@string/poweredBy"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/feritImageView" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/welcomeTextView"
@@ -45,4 +30,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:textAllCaps="false" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="334dp"
+            android:layout_height="313dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/istockphoto_499908699_612x612_removebg_preview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

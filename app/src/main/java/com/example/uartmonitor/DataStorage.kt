@@ -5,14 +5,16 @@ import java.util.Date
 
 class DataStorage: ViewModel() {
 
-    private var dates = ArrayList<Date>(101)
+    private var dates = ArrayList<Date>()
     private var temperatures = DoubleArray(101)
     private var moistures = DoubleArray(101)
-    private var humidityes = DoubleArray(101)
+    private var humidities = DoubleArray(101)
 
     private var pump: Int = 0
     private var fan: Int = 0
     private var heater: Int = 0
+
+    private var consoleLog = ArrayList<String>()
 
     fun GetPump(): Int {
         return pump
@@ -63,13 +65,19 @@ class DataStorage: ViewModel() {
         this.moistures = moistures
     }
     fun AddHumidity(humidity: Double, index:Int){
-        humidityes[index] = humidity
+        humidities[index] = humidity
     }
     fun GetHumidities(): DoubleArray{
-        return humidityes
+        return humidities
     }
     fun SetHumidities(humidities: DoubleArray){
-        this.humidityes = humidityes
+        this.humidities = humidities
     }
 
+    fun GetConsoleLog(): ArrayList<String>{
+        return consoleLog
+    }
+    fun AddConsoleLog(message: String){
+        consoleLog.add(message)
+    }
 }

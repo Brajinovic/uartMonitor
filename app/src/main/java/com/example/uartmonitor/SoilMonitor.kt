@@ -66,7 +66,7 @@ class SoilMonitor : Fragment() {
         lineGraphView.viewport.borderColor = R.color.white
         lineGraphView.viewport.setDrawBorder(true)
         series.color = (0xFF0000cc).toInt()
-        series.title = "Moisture"
+        series.title = "Moisture [%]"
         lineGraphView.addSeries(series)
         lineGraphView.gridLabelRenderer.labelFormatter = DateAsXAxisLabelFormatter(activity);
         lineGraphView.gridLabelRenderer.setHorizontalLabelsAngle(110)

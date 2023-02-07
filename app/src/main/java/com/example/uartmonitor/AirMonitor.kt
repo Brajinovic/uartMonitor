@@ -53,9 +53,9 @@ class AirMonitor : Fragment() {
         lineGraphView.viewport.borderColor = R.color.white
         lineGraphView.viewport.setDrawBorder(true)
         series1.color = (0xFFFF0000).toInt()
-        series1.title = "Temperature"
+        series1.title = "Temperature [°C]"
         series2.color = (0xFF0000FF).toInt()
-        series2.title = "Humidity"
+        series2.title = "Humidity [%]"
         lineGraphView.addSeries(series1)
         lineGraphView.addSeries(series2)
         lineGraphView.gridLabelRenderer.labelFormatter = DateAsXAxisLabelFormatter(activity);
