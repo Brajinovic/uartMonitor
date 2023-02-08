@@ -43,4 +43,8 @@ class LineAdapter(val items: ArrayList<String>) :
             }
 
         }
+
+        fun AddLine(line: String){
+            items.add(line)
+        }
     }
